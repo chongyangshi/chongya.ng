@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Catamaran', sans-serif;
+}
+
+div {
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a.read-more {
+    color: black;
+}
+
+#MAIN {
+    position: relative;
+    background-color: salmon;
+    overflow: auto;
+}
+
+.image-wrapper {
+    width: 50%;
+    height: 35%;
+    position: relative;
+    top: 10%; left: 50%;
+    transform: translate(-50%,-10%);
+    text-align: center;
+}
+
+.profile-image{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.titles {
+    position: relative;
+    top: 10%; left: 50%;
+    transform: translate(-50%,0%);
+    width: 80%;
+    height: 50%;
+    text-align: center;
+}
+
+.main-title {
+    font-family: 'Catamaran', sans-serif;
+    margin 0;
+    padding: 0;
+    -webkit-margin-before:0em;
+    -webkit-margin-after:0em;
+}
+
+h2.main-title {
+    font-size: 3em;
+    color: floralwhite;
+}
+
+h3.main-title {
+    font-size: 1.5em;
+    color: azure;
+}
+
+h4.main-title {
+    font-size: 1em;
+    color: azure;
+}
+
+.title-icons {
+    margin-top: 1em;
+    display: inline-block;
+    height: 1.5em;
+}
+
+.title-icon {
+    font-size: 2em;
+    display: inline;
+    margin: 0.25em;
+    padding: 0.25em;
+}
+
+.project-button {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    width: 6em;
+    height: 2em;
+    font-size: 1em;
+    border-radius: 10px;
+    background-color: darksalmon;
+    color: azure;
+    border: 0px solid red;
+}
+
+#PROJECTS {
+    background-color: beige;
+    padding: 0.25em;
+    overflow: auto;
+    
+}
+
+.project-title {
+    color: darkblue;
+    text-align: center;
+}
+
+h2.project-title {
+    font-size: 2em;  
+}
+
+.project-block {
+    position: relative;
+    top: 0%; left: 50%;
+    transform: translate(-50%,0%);
+    width: 90%;
+    height: 90%;
+    text-align: center;
+}
+
+.project-image {
+    max-height: 6em;
+    padding: 0.5em;
+    border: 1px solid darkblue;
+    border-radius: 0.5em;
+    margin: 0em 1em 0em 1em;
+}
+
+.project-image-highlighted {
+    border: 4px solid blue;
+}
+
+.descriptor {
+    margin-top: 1em;
+    height: auto;
+}
+
+.descriptor-block {
+    height: auto;
+}
+
+i.language-icon {
+    font-size: 4em;
+    padding: 0;
+    margin-left: 0.3em;
+}
+
+.grayscaled {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: gray;
+    opacity: 0.2;
+}
+
+.language-box {
+    bottom: 0;
+}
+
+i.language-icon-highlight {
+    -webkit-transition: all 2.0s ease;
+    -moz-transition: all 2.0s ease;
+    -ms-transition: all 2.0s ease;
+    -o-transition: all 2.0s ease;
+    transition: all 2.0s ease;
+}
