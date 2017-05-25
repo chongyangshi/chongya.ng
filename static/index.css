@@ -76,8 +76,8 @@ h4.main-title {
     height: 1.5em;
 }
 
-.non-block-icons {
-    display: block;
+h4.location-block {
+    margin-top: 1em;
 }
 
 .title-icon {
