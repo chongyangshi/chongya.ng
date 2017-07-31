@@ -21,7 +21,7 @@ a.read-more {
     position: relative;
     background-color: salmon;
     overflow: auto;
-    text-align: center
+    text-align: center;
 }
 
 .image-wrapper {
