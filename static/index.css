@@ -21,6 +21,7 @@ a.read-more {
     position: relative;
     background-color: salmon;
     overflow: auto;
+    text-align: center
 }
 
 .image-wrapper {
@@ -103,7 +104,7 @@ h4.location-block {
     background-color: beige;
     padding: 0.25em;
     overflow: auto;
-    
+
 }
 
 .project-title {
@@ -112,7 +113,7 @@ h4.location-block {
 }
 
 h2.project-title {
-    font-size: 2em;  
+    font-size: 2em;
 }
 
 .project-block {
