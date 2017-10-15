@@ -129,6 +129,8 @@ h2.project-title {
     width: 90%;
     height: 90%;
     text-align: center;
+    table-layout: fixed;
+    display: table;
 }
 
 .project-image {
@@ -150,6 +152,7 @@ h2.project-title {
 
 .descriptor-block {
     height: auto;
+    display: table-row;
 }
 
 i.language-icon {
