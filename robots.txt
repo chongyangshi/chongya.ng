@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /shared/
+
+User-agent: *
+Disallow: /course_notes.html
