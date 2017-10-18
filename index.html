@@ -11,7 +11,7 @@
     <div id="MAIN">
 
         <div class="image-wrapper">
-            <img class="profile-image" src="./static/scy.jpg">
+            <img class="subject-image" src="./static/scy.jpg">
         </div>
         <div class="titles">
             <span class="main-title">
@@ -20,7 +20,9 @@
             </span>
             <h4 class="title-text location-block"><i class="icomoon-location"></i> United Kingdom</h4>
 
-            <button class="project-button">Projects</button> <br />
+            <button class="page-button" data-target="#PROFILE">Profile</button>
+            <button class="page-button" data-target="#PROJECTS">Projects</button>
+            <br />
             <div class="title-icons">
                 <a href="mailto:hello@scy.email" title="Email"><i class="title-icon icomoon-envelop"></i></a>
                 <a href="./pgp_pub.txt" target="_blank" title="PGP Public Key"><i class="title-icon icomoon-unlocked"></i></a>
@@ -31,9 +33,50 @@
         </div>
 
     </div>
+    
+    <div id="PROFILE">
+        <div class="basic-block profile-block" id="PROFILEBLOCK">
+            
+            <div class="profile-container">
+                <h2 class="profile-title">Profile</h2>
+                <h3 class="profile-title">Full CV available by email on request.</h3>
+            </div>
+            
+            <div class="profile-container">    
+                <h2 class="profile-title">Education</h2>
+            </div>
+            <div class="profile-container">
+                <img src="./static/images/cambridge.png" class="profile-image">
+                <h3 class="profile-title">M.Phil. Advanced Computer Science</h3>
+                <h3 class="profile-title profile-text">Christ's College, University of Cambridge, UK</h3>
+                <h3 class="profile-title profile-text">Sep 2017 - Jun 2018, In Progress</h3>
+            </div>
+            
+            <div class="profile-container">
+                <img src="./static/images/york.png" class="profile-image">
+                <h3 class="profile-title">B.Eng. Computer Science</h3>
+                <h3 class="profile-title profile-text">Department of Computer Science, University of York, UK</h3>
+                <h3 class="profile-title profile-text">Sep 2014 - Jun 2017</h3>
+            </div>
+            
+            <div class="profile-container">    
+                <h2 class="profile-title">Employment</h2>
+            </div>
+            
+            <div class="profile-container">
+                <img src="./static/images/touchright2.png" class="profile-image">
+                <h3 class="profile-title">PHP and Web Developer (Intern)</h3>
+                <h3 class="profile-title profile-text">TouchRight Software Ltd., York, UK</h3>
+                <h3 class="profile-title profile-text">Jun 2016 - Aug 2016</h3>
+            </div>
+            
+            
+        </div>
+    </div>
+    
     <div id="PROJECTS">
         <h4 class="project-title">To switch between projects, please click on a project logo.</h4>
-        <div class="project-block" id="PROJECTBLOCK">
+        <div class="basic-block" id="PROJECTBLOCK">
             <div class="descriptor-block">
                 <h3 class="project-title">Personal Projects</h3>
                 <img src="./static/images/Langwith.png" class="project-image project-image-highlighted" data-use-langs="python" data-name="Langwith" data-description="Langwith is a command line server monitoring tool, written with Python and gevent." data-link="https://github.com/icydoge/Langwith">

@@ -11,9 +11,9 @@ function setDescriptor(descriptorID, describedObject) {
 var first_project = $('#PROJECTBLOCK').children('.descriptor-block').first().children('img').first();
 setDescriptor('descriptor-a', first_project);
 
-$(".project-button").click(function() {
+$(".page-button").click(function() {
     $('html, body').animate({
-        scrollTop: $("#PROJECTS").offset().top
+        scrollTop: $($( this ).attr("data-target")).offset().top
     }, 1000);
 });
 
