@@ -4,7 +4,7 @@ body {
     font-family: 'Catamaran', sans-serif;
 }
 
-div {
+div.page-block {
     height: 100vh;
 }
 
@@ -145,23 +145,33 @@ h3.profile-text {
     color: darkblue;
 }
 
-
+.profile-row {
+    text-align: center;
+    height: auto;
+}
 
 .profile-block {
-    width: 50%;
+    display: flex;
+    height: auto;
+}
+
+.profile-column {
+    padding: 2% 5% 2% 5%;
+    text-align: center;
+    flex: 50%;
+    
 }
 
 .profile-container {
-    height: auto;
-    display: table-row;
-    height: auto;
+    padding: 2em 0 2em 0;
 }
+
 .profile-image {
     max-width: 4em;
     padding: 0.5em;
-    display: block;
     float: left;
     margin-right: 2em;
+    margin-bottom: 5em;
 }
 
 #PROJECTS {
