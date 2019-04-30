@@ -1,6 +1,7 @@
 .PHONY: build
-ALPINE_VERSION := 3.7
+ALPINE_VERSION := 3.9
 SVC := web-scy-email
+COMMIT := $(shell git log -1 --pretty='%h')
 
 .PHONY: pull build push
 
@@ -13,5 +14,5 @@ pull:
 	docker pull alpine:${ALPINE_VERSION}
 
 push:
-	docker tag ${SVC}:latest icydoge/web:${SVC}
-	docker push icydoge/web:${SVC}
+	docker tag ${SVC}:latest icydoge/web:${SVC}-${COMMIT}
+	docker push icydoge/web:${SVC}-${COMMIT}
