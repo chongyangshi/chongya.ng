@@ -1,0 +1,35 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: web-scy-email
+  labels:
+    app: web-scy-email  
+spec:
+  selector:
+    matchLabels:
+      app: web-scy-email 
+  replicas: 3 
+  template: 
+    metadata:
+      labels:
+        app: web-scy-email     
+    spec:
+      containers:
+        - name: nginx
+          image: icydoge/web:web-scy-email
+          ports:
+          - containerPort: 80 
+          resources:
+            limits:
+              cpu: 50m
+              memory: 50Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-scy-email
+spec:
+  ports:
+  - port: 80
+  selector:
+    app: web-scy-email
