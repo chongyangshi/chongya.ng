@@ -1,109 +1,228 @@
+<!--
+    Based on https://github.com/startbootstrap/startbootstrap-resume
+
+    The MIT License (MIT)
+
+    Copyright (c) 2013-2021 Start Bootstrap LLC
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in
+    all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+    THE SOFTWARE.
+-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <link rel="stylesheet" href="./static/index.css">
-    <link rel="stylesheet" href="./static/devicon.min.css">
-    <link rel="stylesheet" href="./static/icomoon.css">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Personal page of Chongyang Shi, a Security Engineer based in the UK" />
+    <meta name="author" content="Chongyang Shi" />
     <title>Chongyang Shi</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 
-<body>
-    <div class="page-block" id="MAIN">
-
-        <div class="image-wrapper">
-            <img class="subject-image" src="./static/scy.jpg">
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Chongyang Shi</span>
+            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+                    src="assets/img/profile.jpg" alt="..." /></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Profile</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#employments">Employments</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#miscellaneous">Miscellaneous</a>
+                </li>
+            </ul>
         </div>
-        <div class="titles">
-            <span class="main-title">
-                <h2 class="title-text">Chongyang Shi</h2>
-                <h3 class="title-text">Security Engineer</h3>
-            </span>
-            <h4 class="title-text location-block"><i class="icomoon-location"></i> London, United Kingdom</h4>
-
-	    <a href="#PROFILE">
-                <input type="button" class="page-button" value="Profile">
-            </a>
-            <br />
-            <h4 class="title-text location-block">
-                <img class="location-block-image" src="./static/images/kubernetes.png" /> 
-                <a class="link-hover-glow" href="https://blog.scy.email/running-a-personal-kubernetes-cluster-with-calico-connected-services-on-bare-metal.html">
-                    This personal page runs in a personal Kubernetes cluster
-                </a>
-            </h4>
-            <div class="title-icons">
-                <a href="mailto:hello@scy.email" title="Email"><i class="title-icon icomoon-envelop"></i></a>
-                <a href="./pgp_pub.txt" target="_blank" title="PGP Public Key"><i class="title-icon icomoon-unlocked"></i></a>
-                <a href="https://github.com/chongyangshi" target="_blank" title="Github"><i class="title-icon icomoon-github"></i></a>
-                <a href="https://blog.scy.email" target="_blank" title="Blog"><i class="title-icon icomoon-pencil"></i></a>
+    </nav>
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+        <!-- About-->
+        <section class="resume-section" id="about">
+            <div class="resume-section-content">
+                <h1 class="mb-0">
+                    Chongyang
+                    <span class="text-primary">Shi</span>
+                </h1>
+                <div class="subheading mb-5">
+                    Security Engineer · London, UK ·
+                    <a href="mailto:hello@scy.email">hello@scy.email</a> ·
+                    <a href="/pgp_pub.txt">GPG Key</a>
+                </div>
+                <p class="lead mb-5">I design and build security solutions for cloud infrastructures and containerised
+                    platforms, with matching experience in DevOps and incident engineering. </p>
+                <p class="mb-5">Full CV available <a href="mailto:hello@scy.email">on request</a>.</p>
+                <div class="social-icons">
+                    <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/chongyang-shi/"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="social-icon" target="_blank" href="https://github.com/chongyangshi"><i
+                            class="fab fa-github"></i></a>
+                    <a class="social-icon" target="_blank" href="https://blog.scy.email/"><i
+                            class="fas fa-pencil-alt"></i></a>
+                    <a class="social-icon" target="_blank"
+                        href="https://blog.scy.email/running-a-personal-kubernetes-cluster-with-calico-connected-services-on-bare-metal.html"><i
+                            class="fas fa-dharmachakra"></i></a>
+                </div>
             </div>
-        </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Experience-->
+        <section class="resume-section" id="employments">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Employment History</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Senior Infrastructure Engineer, Security</h3>
+                        <div class="subheading mb-3"><a href="https://monzo.com" target="_blank">Monzo Bank</a></div>
+                        <p>(Pending Start) As a senior individual contributor for the security of Monzo's banking
+                            infrastructure, I design and build security solutions and architectures for the AWS and
+                            Kubernetes-based platform, improving its resiliency to external and internal threats.
+                            Additionally, I provide routine DevSecOps coverage for the platform, and contribute to its
+                            long-term security and compliance strategies.</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">June 2021 - Present</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Security Engineer</h3>
+                        <div class="subheading mb-3"><a href="https://www.kaluza.com/" target="_blank">Kaluza, OVO
+                                Energy</a></div>
+                        <p>As a senior security engineer for OVO’s energy technology subsidiary Kaluza, I worked to
+                            protect the energy retail platform. My primary focus was the infrastructure security of this
+                            cloud-native energy retail platform built on both AWS and GCP; building security tooling and
+                            defensive & detective controls for Kubernetes clusters, CI/CD pipelines, managed services.
+                            Additionally, I acted as a mentor to junior security engineers on infrastructure
+                            security and DevOps; and advised and contributed to platform-level projects from security
+                            and compliance perspectives.
+                        </p>
+                        <p class="mb-0">
+                            <b>Blog Post</b>: <a
+                                href="https://tech.ovoenergy.com/building-a-secure-ci-cd-pipeline-for-terraform-infrastructure-as-code/"
+                                target="_blank">Building a secure CI/CD pipeline for Terraform Infrastructure as
+                                Code</a>
+                        </p>
+                        <p>
+                            <b>Blog Post</b>: <a
+                                href="https://tech.ovoenergy.com/kubernetes-security-monitoring-on-a-decentralised-multi-cluster-platform/"
+                                target="_blank">Kubernetes security monitoring on a decentralised, multi-cluster
+                                platform
+                            </a>
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">July 2020 - June 2021</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Backend Engineer, Security</h3>
+                        <div class="subheading mb-3"><a href="https://monzo.com" target="_blank">Monzo Bank</a></div>
+                        <p>As a member of Monzo’s then-Security Team responsible for protecting an AWS-based,
+                            cloud-native banking platform, I designed and implemented extensive automations to enforce
+                            least privilege, minimise human access to sensitive data, and enable effective auditing at
+                            all levels of the infrastructure (AWS, Kubernetes, and microservices in Go). I additionally
+                            provided regular platform engineering and on-call coverage for Monzo's platform at large.
+                        </p>
+                        <p>
+                            <b>Blog Post</b>: <a
+                                href="https://monzo.com/blog/controlling-outbound-traffic-from-kubernetes"
+                                target="_blank">Controlling outbound traffic from Kubernetes
+                            </a>
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">August 2018 - July 2020</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Web Developer Intern</h3>
+                        <div class="subheading mb-3"><a href="https://touchrightsoftware.com/"
+                                target="_blank">TouchRight Software</a></div>
+                        <p>Full-stack web development for a property management system in PHP on Zend, MySQL, and
+                            jQuery. I also worked on tools to reduce back-office cost, and improved the codebase’s
+                            security.</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">June 2016 - August 2016</span></div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Education-->
+        <section class="resume-section" id="education">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Education</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Christ's College, University of Cambridge</h3>
+                        <div class="subheading mb-3">Master of Philosophy</div>
+                        <div><a href="https://www.cst.cam.ac.uk/admissions/acs" target="_blank">Advanced Computer
+                                Science</a></div>
+                        <p>Passed with Distinction</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">September 2017 - June 2018</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">University of York</h3>
+                        <div class="subheading mb-3">Bachelor of Engineering</div>
+                        <div><a href="https://www.york.ac.uk/study/undergraduate/courses/bsc-beng-computer-science/"
+                                target="_blank">Computer
+                                Science</a></div>
+                        <p>First Class Honours, with Distinction</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">September 2014 - June 2017</span></div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Interests-->
+        <section class="resume-section" id="miscellaneous">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Miscellaneous</h2>
 
+                <p>I work on a range of personal and open-source projects related to security, DevOps, or just
+                    hobby; which can be found via my <a href="https://github.com/chongyangshi" target="_blank">GitHub
+                        profile</a>.</p>
+                <p class="mb-0"></p>I also operate a <a
+                    href="https://blog.scy.email/running-a-low-cost-distributed-kubernetes-cluster-on-bare-metal-with-wireguard.html"
+                    target="_blank">private, self-managed Kubernetes cluster</a> to host many of these projects, with
+                worker nodes on bare-metal machines from both sides of the Atlantic. This personal page you are
+                reading was in fact served from the cluster!</p>
+                <p class="mb-0">In addition to speaking English and Chinese (Mandarin) at a native or near-native level,
+                    I also speak German at an elementary level.</p>
+            </div>
+        </section>
     </div>
-    
-    <div class="page-block" id="PROFILE">
-
-        <div class="profile-row">
-            <h2 class="profile-title">Profile</h2>
-            <h3 class="profile-title">Full CV available by email on request.</h3>
-        </div>
-
-        <div class="profile-block" id="PROFILEBLOCK">
-            
-            <div class="profile-column">  
-                <h2 class="profile-title">Employment</h2>
-                <div class="profile-container">
-                    <img src="./static/images/OVO.png" class="profile-image">
-                    <h3 class="profile-title">Security Engineer</h3>
-                    <h3 class="profile-title profile-text">New Energy Platform</h3>
-                    <h3 class="profile-title profile-text">OVO Energy</h3>
-                    <h3 class="profile-title profile-text">London, UK</h3>
-                    <h3 class="profile-title profile-text">Jul 2020 - Present</h3>
-                </div>
-                <div class="profile-container">
-                        <img src="./static/images/monzo.png" class="profile-image">
-                        <h3 class="profile-title">Backend Engineer</h3>
-                        <h3 class="profile-title profile-text">Security</h3>
-                        <h3 class="profile-title profile-text">Monzo Bank</h3>
-                        <h3 class="profile-title profile-text">London, UK</h3>
-                        <h3 class="profile-title profile-text">Aug 2018 - Jul 2020</h3>
-                </div>
-                <div class="profile-container">
-                    <img src="./static/images/touchright2.png" class="profile-image">
-                    <h3 class="profile-title">PHP and Web Developer</h3>
-                    <h3 class="profile-title profile-text">Intern</h3>
-                    <h3 class="profile-title profile-text">TouchRight Software</h3>
-                    <h3 class="profile-title profile-text">York, UK</h3>
-                    <h3 class="profile-title profile-text">Jun 2016 - Aug 2016</h3>
-                </div>
-            </div>
-
-            <div class="profile-column">  
-                <h2 class="profile-title">Education</h2>
-                <div class="profile-container">
-                    <img src="./static/images/cambridge.png" class="profile-image">
-                    <h3 class="profile-title">M.Phil. Advanced Computer Science</h3>
-                    <h3 class="profile-title profile-text">Christ's College</h3>
-                    <h3 class="profile-title profile-text">University of Cambridge, UK</h3>
-                    <h3 class="profile-title profile-text">Sep 2017 - Jun 2018</h3>
-                    <h3 class="profile-title profile-text">Passed with Distinction</h3>
-                </div>
-                <div class="profile-container">
-                    <img src="./static/images/york.png" class="profile-image">
-                    <h3 class="profile-title">B.Eng. Computer Science</h3>
-                    <h3 class="profile-title profile-text">Department of Computer Science</h3>
-                    <h3 class="profile-title profile-text">University of York, UK</h3>
-                    <h3 class="profile-title profile-text">Sep 2014 - Jun 2017</h3>
-                    <h3 class="profile-title profile-text">First Class Honours, with Distinction</h3>
-                </div>
-            </div>
-            
-        </div>
-
-        <div class="profile-row">
-            <h3 class="profile-title profile-text">Logo images are registered trademarks of respective organisations.</h3>
-        </div>
-    </div>
-    
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>
