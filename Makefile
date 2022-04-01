@@ -8,7 +8,7 @@ COMMIT := $(shell git log -1 --pretty='%h')
 all: pull build push
 
 build:
-	docker build -t ${SVC} --build-arg ALPINE_VERSION=${ALPINE_VERSION} .
+	docker build -t ${SVC} --platform linux/amd64 --build-arg ALPINE_VERSION=${ALPINE_VERSION} .
 
 pull:
 	docker pull alpine:${ALPINE_VERSION}
