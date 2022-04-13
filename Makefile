@@ -1,5 +1,5 @@
 .PHONY: build
-ALPINE_VERSION := 3.11
+ALPINE_VERSION := 3.15
 SVC := web-scy-email
 COMMIT := $(shell git log -1 --pretty='%h')
 
