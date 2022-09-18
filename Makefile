@@ -1,6 +1,6 @@
 .PHONY: build
 ALPINE_VERSION := 3.15
-SVC := web-scy-email
+SVC := web-chongya-ng
 COMMIT := $(shell git log -1 --pretty='%h')
 
 .PHONY: pull build push

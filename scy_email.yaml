@@ -1,22 +1,22 @@
 apiVersion: apps/v1 
 kind: Deployment
 metadata:
-  name: web-scy-email
+  name: web-chongya-ng
   labels:
-    app: web-scy-email  
+    app: web-chongya-ng  
 spec:
   selector:
     matchLabels:
-      app: web-scy-email 
+      app: web-chongya-ng 
   replicas: 3 
   template: 
     metadata:
       labels:
-        app: web-scy-email     
+        app: web-chongya-ng     
     spec:
       containers:
         - name: nginx
-          image: icydoge/web:web-scy-email-4404728
+          image: icydoge/web:web-chongya-ng-4404728
           ports:
           - containerPort: 8080 
           resources:
@@ -27,9 +27,9 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: web-scy-email
+  name: web-chongya-ng
 spec:
   ports:
   - port: 8080
   selector:
-    app: web-scy-email
+    app: web-chongya-ng
