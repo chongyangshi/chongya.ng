@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: icydoge/web:web-chongya-ng-4404728
+          image: icydoge/web:web-chongya-ng-50c232a
           ports:
           - containerPort: 8080 
           resources:
